@@ -1,7 +1,7 @@
-var appName = "Introduction to Handlebars";
+var appName = "ExpressJS Boilerplate";
 var express = require('express');
 var app = express();
-var listeningPort = 3000;
+var listeningPort = 5000; // port 5000 is required by Heroku
 
 app.use(express.static(__dirname + '/Resources'));
 app.use(express.static(__dirname + '/Views'));
