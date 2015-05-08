@@ -10,5 +10,5 @@ app.get('/', function(req, res) {
 	res.sendFile('index.html');
 });
 
-app.listen(listeningPort);
+app.listen(process.env.PORT || listeningPort);
 console.log(appName + " is being served on localhost:" + listeningPort);
